@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navvv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="head">
+        <div class="logo">Brand <span> NAME</span></div>
+        <div class="ham" id="ham">
+<i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-link" id="nav-link">
+            <li><a href="#">Home</a></li>
+            <li class="drop">
+                <a href="#">Learn</a>
+                    <ul class="drop-menu">
+                        <li><a href="">What is Addiction</a></li>
+                        <li><a href="">Types of Addiction</a></li>
+                        <li><a href="">Signs of Addiction</a></li>
+                        <li><a href="">Causes and Prevention of Addiction</a></li>
+                        <li><a href="">Myth and Facts</a></li>
+                    </ul>
+            </li>
+            <li class="drop">
+                <a href="#">Resource</a>
+                    <ul class="drop-menu">
+                        <li><a href="">Stories of Hope</a></li>
+                        <li><a href="">Healing tools</a></li>
+                        <li><a href="">Supporting a Friend</a></li>
+                        <li><a href="">Confession wall</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">Media</a></li>
+        </nav>
+        <button class="head-btn"><a href="">Contact</a></button>
+    </header>
+    <script>
+        const hambuger = document.getElementById("ham");
+        const navLink = document.getElementById("nav-link");
+         
+        hambuger.addEventListener('click', () => {
+            navLink.classList.toggle("active");
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-color: #032B44;
+    display: flex;
+    padding: 30px 100px;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    font-size: 1.5rem;
+}
+.logo span{
+    color: #ADD8E6;
+}
+.ham i{
+    display: none;
+    font-size: 1.0rem;
+}
+.nav-link{
+    display: flex;
+   justify-content: center;
+   gap: 30px;
+   position: relative;
+   align-items: center;
+   color: white;
+  
+   margin: 0 auto;
+
+}
+.nav-link li{
+    list-style: none;
+    color: white;
+  
+}
+.nav-link li a{
+  text-decoration: none;
+  transition: all 1s;
+    color: white;
+    font-size: 1rem;
+
+}
+.nav-link li a:hover{
+    color: #ADD8E6;
+
+}
+.drop{
+    position: relative;
+}
+.drop-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ADD8E6;
+    display: none;
+    flex-direction: column;
+    min-height: 150px;
+    z-index: 100;
+    transition: all 2.0s;
+    padding: 10px 10px;
+    border-bottom: 2px solid black;
+    gap: 10px;
+    width: 180px;
+
+}
+.drop-menu li a{
+     border-bottom: 1px solid black;
+
+}
+.drop-menu li a:hover{
+
+    color: #032B44;
+}
+.drop:hover .drop-menu{
+    display: flex;
+
+}
+.head-btn{
+    background-color: #ADD8E6;
+    color: #032B44;
+    padding: 10px 30px;
+    border: 1px solid white;
+}
+.head-btn a{
+text-decoration: none;
+font-size: 1rem;
+font-weight: 600;
+
+}
+@media screen and (max-width:768px){
+    .head{
+        padding: 20px 50px;
+    }
+    .logo{
+        font-size: 1.2rem;
+    }
+    .ham i{
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .ham i:hover .nav-link{
+        display: flex;
+    }
+    .nav-link{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #032B44;
+    }
+    .nav-link li{
+        margin: 10px 0;
+    }
+    .nav-link.active{
+        display: flex;
+    }
+}
+@media screen and (max-width:380px){
+     .head{
+        padding: 20px 50px;
+        gap: 20px;
+        width:100% ;
+    }
+    .head-btn{
+        padding: 0px 10px;
+        font-size: 0.8rem;
+    }
+}
