@@ -49,11 +49,11 @@
             </div>
         </div>
         <div class="cards">
-            <button onclick="showSlide(0)">70% <br> don't seek help due to stigma
+            <button onclick="showSlide(0)" style="max-width: 350px;"> <span class="figure">70%</span>  <br> don't seek help due to stigma
 </button>
-            <button onclick="showSlide(1)">20% <br> 
+            <button onclick="showSlide(1)" style="max-width: 350px;"> <span class="figure">20%</span> <br> 
 of teens (13-17) and 35 percent of young adults (18-21) engage in substance use</button>
-            <button onclick="showSlide(2)">3 out of 4 <br>  people (75%) recover from addiction</button>
+            <button onclick="showSlide(2)" style="max-width: 350px;"> <span class="figure">3 out of 4</span> <br>  people (75%) recover from addiction</button>
         </div>
   </div>
 </section>
@@ -87,7 +87,7 @@ const heroText = document.getElementById('home-herotext');
 
 const slides = [
   {
-    image: 'images/hero-min(1).jpg',
+    image: 'images/chainbreak.jpg',
     title: 'Breaking The Chains Of Addiction.',
     message: 'Overcome the Chains that bind you and discover a brighter future.- Take steps towards recovery and start building a better tomorrow'
   },
@@ -115,8 +115,8 @@ hero.style.background = `url('${slides[index].image}') center/cover no-repeat`;
     <h1>${slides[index].title}</h1>
     <p>${slides[index].message}</p>
     <div class="link-buttons">
-      <a href="about.html" class="hero-btn">Learn More</a>
-      <a href="contact.html" class="hero-btn">Contact Us</a>
+      <a href="about.html" class="hero-btn">Understand addiction</a>
+      <a href="contact.html" class="hero-btn">Healing Jounery</a>
     </div>
   `;
   resetAutoSlide();
