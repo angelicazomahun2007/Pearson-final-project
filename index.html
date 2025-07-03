@@ -48,7 +48,14 @@
                 <a href="">Healing Jounery</a>
             </div>
         </div>
-
+        <div class="cards">
+            <button onclick="showSlide(0)">70% <br> don't seek help due to stigma
+</button>
+            <button onclick="showSlide(1)">20% <br> 
+of teens (13-17) and 35 percent of young adults (18-21) engage in substance use</button>
+            <button onclick="showSlide(2)">3 out of 4 <br>  people (75%) recover from addiction</button>
+        </div>
+  </div>
 </section>
 
 
@@ -74,6 +81,65 @@
         });
 
     </script>
+    <script>
+           const hero = document.getElementById('hero');
+const heroText = document.getElementById('hero-text');
+
+const slides = [
+  {
+    image: 'image/hero-min(1).jpg',
+    title: 'Breaking The Chains Of Addiction.',
+    message: 'Overcome the Chains that bind you and discover a brighter future.- Take steps towards recovery and start building a better tomorrow'
+  },
+  {
+    image: 'image2.jpg',
+    title: 'Breaking the Cycle: Helping Youth Overcome Addiction',
+    message: 'Supporting the youth on their journey to recovery by transforming lives and building resilience in young people'
+  },
+  {
+    image: 'image3.jpg',
+    title: 'Recovery is Possible: Stories of Triumph and Transformation',
+    message: 'Find hope and motivation in the jounery of   those who have overcome addiction'
+  }
+];
+
+let current = 0;
+let autoSlide;
+
+// Update slide background + text
+function showSlide(index) {
+  current = index;
+  hero.style.background = `url('${slides[index].image}') center/cover no-repeat`;
+  heroText.innerHTML = `
+    <h1>${slides[index].title}</h1>
+    <p>${slides[index].message}</p>
+    <div class="link-buttons">
+      <a href="about.html" class="hero-btn">Learn More</a>
+      <a href="contact.html" class="hero-btn">Contact Us</a>
+    </div>
+  `;
+  resetAutoSlide();
+}
+
+// Auto slide
+function startAutoSlide() {
+  autoSlide = setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 5000);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlide);
+  startAutoSlide();
+}
+
+// Initial load
+showSlide(current);
+startAutoSlide();
+
+    </script>
     
+
 </body>
 </html>

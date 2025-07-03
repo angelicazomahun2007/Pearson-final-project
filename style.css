@@ -132,3 +132,124 @@ font-weight: 600;
         font-size: 0.8rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.home-hero {
+  height: 100vh;
+  background: url('image1.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  transition: background 1s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.home-herotext {
+  z-index: 2;
+  padding: 1rem;
+}
+
+.home-herotexth1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-herotext p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Hero link buttons */
+.home-herobtn{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #f2f2f2;
+}
+
+/* Cards (Slide Control Buttons) */
+.cards {
+  position: absolute;
+  bottom: 30px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.cards button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cards button:hover {
+  background-color: #eee;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .link-buttons {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
