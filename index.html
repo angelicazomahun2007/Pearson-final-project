@@ -40,7 +40,7 @@
     </header>
     <section class="home-hero" id="home-hero">
         <div class="overlay"></div>
-        <div class="home-herotext">
+        <div class="home-herotext" id="home-herotext">
             <h1> Breaking the chains of Addiction</h1>
             <p>Overcome the Chains that bind you and discover a brighter future.- Take steps towards recovery and start building a better tomorrow</p>
             <div class="home-herobtn">
@@ -82,22 +82,22 @@ of teens (13-17) and 35 percent of young adults (18-21) engage in substance use<
 
     </script>
     <script>
-           const hero = document.getElementById('hero');
-const heroText = document.getElementById('hero-text');
+           const hero = document.getElementById('home-hero');
+const heroText = document.getElementById('home-herotext');
 
 const slides = [
   {
-    image: 'hero-min(1).jpg',
+    image: 'images/hero-min(1).jpg',
     title: 'Breaking The Chains Of Addiction.',
     message: 'Overcome the Chains that bind you and discover a brighter future.- Take steps towards recovery and start building a better tomorrow'
   },
   {
-    image: 'youth-min.jpg',
+    image: 'images/youth-min.jpg',
     title: 'Breaking the Cycle: Helping Youth Overcome Addiction',
     message: 'Supporting the youth on their journey to recovery by transforming lives and building resilience in young people'
   },
   {
-    image: 'Group-Therapy-94001696-min.jpg',
+    image: 'images/group-therapy-94001696-min.jpg',
     title: 'Recovery is Possible: Stories of Triumph and Transformation',
     message: 'Find hope and motivation in the jounery of   those who have overcome addiction'
   }
@@ -109,7 +109,8 @@ let autoSlide;
 // Update slide background + text
 function showSlide(index) {
   current = index;
-  hero.style.background = `url('${slides[index].image}') center/cover no-repeat`;
+  
+hero.style.background = `url('${slides[index].image}') center/cover no-repeat`;
   heroText.innerHTML = `
     <h1>${slides[index].title}</h1>
     <p>${slides[index].message}</p>
