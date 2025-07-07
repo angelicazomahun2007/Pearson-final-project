@@ -8,6 +8,9 @@
     display: flex;
     padding: 30px 100px;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .logo{
     color: white;
@@ -217,6 +220,7 @@ body, html {
   z-index: 2;
   display: flex;
   gap: 30px;
+  /* flex-wrap: wrap; */
   
 }
 
@@ -228,6 +232,7 @@ body, html {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  border: white 0.5px solid;
   transition: background 0.3s;
   /* font-size: 0.5rem; */
 }
@@ -240,20 +245,84 @@ body, html {
   font-size: 2.5rem;
 }
 /* Responsive Text */
+@media (max-width: 570px){
+ .home-herotext {
+    margin-top: -200px;
+    width: 80%;
+  
+  }
+   .home-herotext h1{
+  font-size: 1rem; 
+  
+  }
+
+}
+@media (max-width: 541px){
+.home-herotext {
+    margin-top: -200px;
+    width: 100%;
+  
+  }
+  
+.link-buttons{
+  display:flex;
+  flex-direction: column;
+  margin-top: -50px;
+
+  }
+  .link-buttons :nth-child(2){
+margin-top: -120px;
+  }
+
+}
 @media (max-width: 768px) {
-  .text h1 {
-    font-size: 2rem;
+  .home-herotext {
+  
+    margin-top: -140px;
+  
   }
+ .home-herotext h1{
+  font-size: 2rem; 
+  
+  }
+   .home-herotext p {
+    font-size: 0.8rem;
+  
+   }
+   .home-herobtn{
+    gap:5px;
+    
+   }
 
-  .text p {
-    font-size: 1rem;
-  }
-
-  .link-buttons {
-    flex-direction: column;
-  }
 
   .cards {
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* position: relative; */
+    /* top:300px; */
   }
+  .cards button{
+
+  }
+}
+
+
+/* home section */
+
+.home-sec1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-container1{
+  display: flex;
+  justify-content: center;
+}
+.home-div1{
+  width: 20%
+
+}
+.home {
+  width:100%;
+
 }
