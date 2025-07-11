@@ -446,16 +446,85 @@ margin-top: -120px;
 .home-sec2{
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: #032B44; */
 }
 .home-sec2 h1{
-font-size: 2rem;
-color: #032B44;
-padding-top: 50px;
-border-bottom: 3px solid #032B44;
-
+  font-size: 2.5rem;
+  color: #032B44;
+  border-width: 200px;
+  padding: 10px 50px;
+  position: relative;
+   display: inline-block;
+}
+.home-sec2 h1::after{
+  content: "";
+position:absolute;
+top:60px;
+left:40%;
+width: 150px;
+height:5px;
+background-color:#ADD8E6;
+border-radius: 20px;
 
 }
+ .home-sec2 > p{
+font-size: 18px;
+padding-top: 20px;
+/* buttom:-8px; */
+ }
+
+ .main-div2{
+  display: flex;
+ margin: 50px 50px;
+  gap:30px;
+  
+
+ }
+ .home-div2{
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #032B44;
+  color: white;
+  gap:15px;
+  border-radius: 20px;
+  padding: 10px;
+
+ }
+.home-div2 i{
+  font-size: 4rem;
+  transition: all 0.5s;
+}
+.home-div2 i:hover{
+font-size: 4.5rem;
+color:#ADD8E6;
+  
+}
+.home-div2 h2{
+  font-size: 2rem;
+
+}
+.home-div2 p{
+  font-size: 1rem;
+}
+.home-div2 a{
+  text-decoration: none;
+  width:150px;
+  height:40px;
+  background-color: #ADD8E6;
+  /* padding: 20px 50px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+
+}
+
