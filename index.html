@@ -216,18 +216,146 @@ of teens (13-17) and 35 percent of young adults (18-21) engage in substance use<
   <p>Practical techniques to help you manage addiction, find balance, and support your healing journey.</p>
   <div class="home-div4">
      <div class="tool-card">
-  
+      
+   <h2>Just Breathe — Your Calm Begins Here</h2>
        <div class="breathing-circle" id="breathingCircle" onclick="startBreathing()">
         Click to Start
       </div>
-      <div id="breathingInstructions" style="text-align: center; margin-top: 1rem;"></div>
+     
+      <p>A gentle breathing exercise to help you relax, reset, and find peace in the moment.
+        Slow your breath, calm your mind. This breathing tool helps you pause and take back control
+      </p>
+      <div id="breathingInstructions" style="text-align: center; margin-top: 1rem;">
+
       </div>
+
+      </div>
+      <div class="tool-card">
+        <h2>Reflect, Write, and Download Your Journey</h2>
+       
+
+         <div class="journal-prompt">
+      🖊️ <strong>Today’s Prompt:</strong><br />
+      “What is one thing I’m proud of today, no matter how small?”
+    </div>
+    <textarea id="journalText" placeholder="Write your thoughts here..." rows="10"></textarea>
+<br>
+<button onclick="downloadText()">Download Entry</button>
+
+      </div>
+      <div class="tool-card ground">
+
+       <h2>Return to the Present</h2>
+    <p>Feeling overwhelmed? Try this grounding tool. Use your senses to pause the noise and reconnect with the moment.</p>
+
+    <ul class="grounding-steps">
+      <li><strong>👀 5 things</strong> you can see</li>
+      <li><strong>✋ 4 things</strong> you can touch</li>
+      <li><strong>👂 3 things</strong> you can hear</li>
+      <li><strong>👃 2 things</strong> you can smell</li>
+      <li><strong>👅 1 thing</strong> you can taste</li>
+    </ul>
+
+
+    <a href="" class="cta-link">See more healing tools →</a>
+ 
+      </div>
+
+
+
+      <div></div>
   </div>
 
 </section>
 
 
 
+<section class="media-home">
+  <div class="media-header">
+    <h2>Media Zone</h2>
+    <p>Explore powerful visual and audio resources to support your recovery journey.</p>
+  </div>
+
+  <div class="media-features">
+    <!-- Media Box 1: Guided Audio -->
+    <div class="media-box">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Guided Meditation" />
+      <h3>Guided Meditation</h3>
+      <p>Calm your mind and body with soothing audio journeys designed to bring peace and clarity.</p>
+      <a href="audio-tools.html">Listen Now →</a>
+    </div>
+
+    <!-- Media Box 2: Healing Videos -->
+    <div class="media-box">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Healing Videos" />
+      <h3>Healing Stories & Talks</h3>
+      <p>Watch real-life stories, expert talks, and inspiring recovery messages that lift you up.</p>
+      <a href="media-gallery.html">Watch More →</a>
+    </div>
+
+    <!-- Media Box 3: Grounding Tool -->
+    <div class="media-box">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Grounding Tool" />
+      <h3>5-4-3-2-1 Grounding</h3>
+      <p>Use this mental tool anytime you feel overwhelmed — reconnect to the now using your senses.</p>
+      <a href="#grounding-section">Try Now →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-text">
+      <h2>Contact Us</h2>
+      <p>Have questions, suggestions, or need support? We're here for you. Reach out anytime.</p>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/myzpyvnl" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-support">
+      <p><strong>📞 Helpline:</strong>   +233 302 761028/+233 302 761065</p>
+      <p><strong>📧 Email:</strong> support@yourdomain.com</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>BreakAddict</h3>
+      <p>A safe and supportive platform for healing, hope, and transformation. We're here to help you rebuild your life.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: support@yourdomain.com</p>
+      <p>Helpline: +233 123 456 789</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Recovery Space. All rights reserved.</p>
+  </div>
+</footer>
 
 
 
@@ -377,6 +505,18 @@ startAutoSlide();
     }, 7000);
   }, 4000);
 }
+</script>
+<script>
+  function downloadText() {
+    const text = document.getElementById("journalText").value;
+    const blob = new Blob([text], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "My_Journal_Entry.txt";
+    a.click();
+    URL.revokeObjectURL(url);
+  }
 </script>
 </body>
 </html>
