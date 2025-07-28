@@ -362,7 +362,96 @@ of teens (13-17) and 35 percent of young adults (18-21) engage in substance use<
 
 
 
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+<script>
+  // Animate nav on load
+  gsap.from(".nav-link li", {
+    y: -50,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 1,
+    ease: "power2.out"
+  });
 
+  // Animate hero text
+  gsap.from(".home-herotext h1", {
+    opacity: 0,
+    y: 70,
+    duration: 1.2,
+    delay: 0.5,
+    ease: "power3.out"
+  });
+
+  gsap.from(".home-herotext p", {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    delay: 0.8,
+    ease: "power2.out"
+  });
+
+  // Cards button animation
+  gsap.from(".cards button", {
+    opacity: 0,
+    scale: 0.5,
+    stagger: 0.2,
+    duration: 1,
+    delay: 1.2,
+    ease: "back.out(1.7)"
+  });
+
+  // Section reveals on scroll
+  gsap.utils.toArray("section").forEach(section => {
+    gsap.from(section, {
+      scrollTrigger: {
+        trigger: section,
+        start: "top 65%",
+        toggleActions: "play none none reverse",
+        markers: false,
+
+
+
+      },
+      y: 80,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    });
+     document.querySelectorAll("a, buttonr,.hover-card,").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+      gsap.to(el, { scale: 1.05, duration: 0.3, ease: "power2.out" });
+    });
+    el.addEventListener("mouseleave", () => {
+      gsap.to(el, { scale: 1, duration: 0.3, ease: "power2.inOut" });
+    });
+  });
+
+  // Hero parallax text effect on mouse move
+  const hero = document.querySelector(".home-hero");
+  const heroText = document.querySelector(".home-herotext");
+
+  if (hero && heroText) {
+    hero.addEventListener("mousemove", e => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 30;
+      const y = (e.clientY / window.innerHeight - 0.5) * 30;
+      gsap.to(heroText, {
+        x: x,
+        y: y,
+        duration: 0.5,
+        ease: "power1.out"
+      });
+    });
+
+    hero.addEventListener("mouseleave", () => {
+      gsap.to(heroText, { x: 0, y: 0, duration: 0.5 });
+    });
+  }
+  });
+
+  
+</script> 
 
 
 
