@@ -1,0 +1,50 @@
+.learn-hero {
+  text-align: center;
+  background-color: #032B44;
+  color: white;
+  padding: 60px 20px;
+}
+.learn-hero h1 {
+  font-size: 2.5rem;
+}
+.learn-hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.toggle-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.toggle-filter button {
+  padding: 10px 20px;
+  border: none;
+  background:#06597a;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.toggle-filter button:hover {
+  background:#ADD8E6 ;
+}
+.learn-content {
+  padding: 40px 20px;
+}
+.learn-section {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.learn-section h2 {
+  color: #032B44;
+  margin-bottom: 10px;
+}

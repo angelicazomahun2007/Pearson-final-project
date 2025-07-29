@@ -3,13 +3,16 @@
     margin: 0;
     padding: 0;
 }
-a, button, .hover-card{
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+a, button, .card, .story-panel, .healing-tool, .media-box, .footer-about, .footer-links, .footer-contact,.tool-card,.home-div3 {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-a:hover, button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+a:hover, button:hover,
+.card:hover, .story-panel:hover,
+.healing-tool:hover, .media-box:hover,
+.footer-about:hover, .footer-links:hover, .footer-contact:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .head{
     background-color: #032B44;

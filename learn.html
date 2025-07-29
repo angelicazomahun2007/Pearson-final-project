@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="learn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+      <header class="head">
+        <div class="logo">Brand <span> NAME</span></div>
+        <div class="ham" id="ham">
+<i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-link" id="nav-link">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop">
+                <a href="learn.html">Learn</a>
+                    <ul class="drop-menu">
+                        <li><a href="">What is Addiction</a></li>
+                        <li><a href="">Types of Addiction</a></li>
+                        <li><a href="">Signs of Addiction</a></li>
+                        <li><a href="">Causes and Prevention of Addiction</a></li>
+                        <li><a href="">Myth and Facts</a></li>
+                    </ul>
+            </li>
+            <li class="drop">
+                <a href="#">Resource</a>
+                    <ul class="drop-menu">
+                        <li><a href="">Stories of Hope</a></li>
+                        <li><a href="">Healing tools</a></li>
+                        <li><a href="">Supporting a Friend</a></li>
+                        <li><a href="">Confession wall</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">Media</a></li>
+        </nav>
+        <button class="head-btn"><a href="">Contact</a></button>
+    </header>
+
+
+
+
+
+ <section class="learn-hero">
+    <h1>Learn About Addiction</h1>
+    <p>Explore different aspects of addiction and how to overcome it.</p>
+  </section>
+
+  <div class="toggle-filter">
+    <button onclick="showSection('what')">What is Addiction?</button>
+    <button onclick="showSection('types')">Types</button>
+    <button onclick="showSection('signs')">Signs</button>
+    <button onclick="showSection('causes')">Causes & Prevention</button>
+    <button onclick="showSection('myths')">Myths & Facts</button>
+  </div>
+
+
+  
+
+  <main class="learn-content">
+    <section class="learn-section" id="what">
+      <h2>What is Addiction?</h2>
+      <p>Addiction is a chronic dysfunction of the brain system that involves reward, motivation, and memory.</p>
+    </section>
+
+
+
+
+
+    <section class="learn-section" id="types">
+      <h2>Types of Addiction</h2>
+      <p>Common types include substance (drugs, alcohol), behavioral (gaming, gambling), and emotional dependencies.</p>
+    </section>
+
+
+
+
+
+
+    <section class="learn-section" id="signs">
+      <h2>Signs & Symptoms</h2>
+      <p>Includes strong cravings, withdrawal symptoms, neglecting responsibilities, and repeated failure to stop.</p>
+    </section>
+
+
+
+
+
+
+    <section class="learn-section" id="causes">
+      <h2>Causes & Prevention</h2>
+      <p>Can be genetic, psychological, environmental. Prevention involves education, support, and healthy routines.</p>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="learn-section" id="myths">
+      <h2>Myths & Facts</h2>
+      <p>Myth: Addiction is a choice. Fact: It is a medical condition influenced by many complex factors.</p>
+    </section>
+
+
+
+
+
+
+  </main>
+
+
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.learn-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+
+      gsap.from(`#${id}`, { opacity: 0, y: 30, duration: 0.6 });
+    }
+
+    // Show default section
+    showSection('what');
+  </script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script>
+        const hambuger = document.getElementById("ham");
+        const navLink = document.getElementById("nav-link");
+         
+        hambuger.addEventListener('click', () => {
+            navLink.classList.toggle("active");
+        });
+
+    </script>
+
+
+</body>
+</html>

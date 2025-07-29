@@ -401,25 +401,23 @@ of teens (13-17) and 35 percent of young adults (18-21) engage in substance use<
     delay: 1.2,
     ease: "back.out(1.7)"
   });
-
-  // Section reveals on scroll
-  gsap.utils.toArray("section").forEach(section => {
+    gsap.utils.toArray("section, .story-panel, .healing-tool, .media-box").forEach(section => {
     gsap.from(section, {
       scrollTrigger: {
         trigger: section,
-        start: "top 65%",
-        toggleActions: "play none none reverse",
-        markers: false,
-
-
-
+        start: "top 75%",
+        end: "bottom 25%",
+        // scrub: true,
+        toggleActions: "play none none reverse"
       },
-      y: 80,
+      // x: 50,
+      y: 50,
       opacity: 0,
       duration: 1,
       ease: "power2.out"
     });
-     document.querySelectorAll("a, buttonr,.hover-card,").forEach(el => {
+  });
+  document.querySelectorAll("a, button, .card, .story-panel, .healing-tool, .media-box").forEach(el => {
     el.addEventListener("mouseenter", () => {
       gsap.to(el, { scale: 1.05, duration: 0.3, ease: "power2.out" });
     });
@@ -428,27 +426,19 @@ of teens (13-17) and 35 percent of young adults (18-21) engage in substance use<
     });
   });
 
-  // Hero parallax text effect on mouse move
-  const hero = document.querySelector(".home-hero");
-  const heroText = document.querySelector(".home-herotext");
-
-  if (hero && heroText) {
-    hero.addEventListener("mousemove", e => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 30;
-      const y = (e.clientY / window.innerHeight - 0.5) * 30;
-      gsap.to(heroText, {
-        x: x,
-        y: y,
-        duration: 0.5,
-        ease: "power1.out"
-      });
+    document.querySelectorAll("a, button, .card, .story-panel, .home-div1, .home-div2, .media-box, .home-div3, .tool-card ").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+      gsap.to(el, { scale: 1.05, duration: 0.3, ease: "power2.out" });
     });
-
-    hero.addEventListener("mouseleave", () => {
-      gsap.to(heroText, { x: 0, y: 0, duration: 0.5 });
+    el.addEventListener("mouseleave", () => {
+      gsap.to(el, { scale: 1, duration: 0.3, ease: "power2.inOut" });
     });
-  }
   });
+
+
+ 
+  
+  
 
   
 </script> 
