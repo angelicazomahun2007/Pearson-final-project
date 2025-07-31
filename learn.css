@@ -63,7 +63,7 @@
 #what .what-div1 {
   display: flex;
   gap: 20px;
-  max-width: 90%;
+  max-width: 80%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -94,12 +94,15 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  margin-top: 100px ;
 
 }
 .what-div2 h2 {
   font-size: 2rem;
   margin-bottom: 10px;
   text-align: center;
+  border-bottom: #032B44 5px  solid ;
+padding-bottom: 30px;
 }
 .what-div2 p em{
   font-size: 1.2rem;
@@ -114,4 +117,312 @@
   font-size: 1.5rem;
   line-height: 1.6;
   padding-bottom: 30px;
+}
+
+.what-div3{
+  display: flex;
+  margin: 0 auto;
+gap: 10px;
+width: 80%;
+justify-content: center;
+margin-top: 50px;
+}
+.what-div3 .addict-statistic{
+  width: 60%;
+height: auto;
+}
+.stat-text{
+  max-width: 50%;
+  line-height: 2.5;
+}
+.stat-text h4{
+font-size: 2rem;
+padding-bottom: 20px;
+}
+.stat-text ul{
+list-style-type: square;
+font-size: 1.5rem;
+}
+
+
+.what-div4{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  max-width: 50%;
+}
+.what-div4 h2{
+  font-size: 2rem;
+}
+.what-div4 i{
+  font-size: 3.5rem;
+}
+.what-div4 p{
+  font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.what-btn{
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.what-btn1 {
+  padding: 12px 24px;
+  background-color: #032B44;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-top: 30px;
+}
+
+.what-btn1:hover {
+  background-color: #065a82;
+}
+
+.what-btn2 {
+  background-color: transparent;
+  color: #032B44;
+  border: 2px solid #032B44;
+  /* margin-right: 30px; */
+    text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  padding: 12px 24px;
+
+}
+
+.what-btn2:hover {
+  background-color: #032B44;
+  color: white;
+}
+
+
+@media screen and (max-width: 1024px) {
+  #what .what-div1 {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    /* text-align: center; */
+  }
+
+  .what-div1 img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+.what-div2{
+  max-width: 100%;
+}
+  .what-div3 {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    
+
+  }
+.what-div3 .addict-statistic img{
+  max-width: 100%;
+}
+  .stat-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .what-div3 .addict-statistic {
+    width: 100%;
+  }
+
+  .what-div4 {
+    max-width:  100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .what-div1 h2 {
+    font-size: 2rem;
+  }
+
+  .what-div1 p,
+  .scenario,
+  .stat-text ul {
+    font-size: 1.1rem;
+  }
+
+  .stat-text h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .what-div2 h2 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+.what-div4{
+  max-width: 100%;
+}
+  .what-div4 h2 {
+    font-size: 1.5rem;
+  }
+
+  .what-div4 i {
+    font-size: 2rem;
+  }
+
+  .what-div4 p {
+    font-size: 1.2rem;
+  }
+.what-btn{
+  flex-direction: column;
+  gap: 10px;
+}
+  .what-btn1,
+  .what-btn2 {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .what-btn2 {
+    margin-right: 0;
+  }
+}
+
+
+
+
+/* types of addiction */
+#types{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+#types h2{
+  text-align: center;
+  font-size: 3rem;
+}
+.types-div1{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+gap: 100px;
+width: 80%;
+align-items: center;
+justify-content: center;
+margin-top: 50px;
+}
+ 
+.types-div1 img{
+  max-width: 50%;
+  height: 500px;
+  margin:0 auto;
+  border-radius: 20px;
+}
+.types-div1 p{
+  /* max-width: ; */
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.types-div1 ul{
+  list-style-type: square;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.types-div2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 80%;
+}
+.type-text2{
+  max-width: 50%;
+  text-align: left;
+  line-height: 1.5;
+
+}
+.type-text2 h3{
+  font-size: 2.5rem;
+  text-align: left;
+  border-bottom: #032B44 5px solid ;
+width: -50px;
+padding-bottom: 10px;
+margin-bottom: 30px;
+}
+
+.type-text2  h4{
+  font-size: 2rem;
+}
+.type-text2 p{
+  font-size: 1.5rem;
+}
+.types-div2 img{
+  width: 50%;
+
+}
+
+.types-div3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 80%;
+
+}
+.types-div3 p{
+  font-size:  1.5rem;
+  line-height: 1.3;
+}
+.type-text1-sub{
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+  padding-left: 20px;
+
+}
+.type-text1-sub1{
+ border-left: #032B44 10px solid;
+ border-bottom-left-radius: 20px;
+ border-top-left-radius: 20px;
+ padding-left: 30px;
+ box-shadow: 1px 1px 10px 2px #032b443d;
+ padding: 30px;
+}
+.type-text1-sub1 li{
+  font-size: 2rem;
+  color: #032B44;
+  font-weight: 800;
+  line-height: 1.5;
+
+}
+.types-div4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.types-div4 div{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.types-div4 div ul{
+  list-style-type: square;
+  font-weight: 500;
+  line-height: 2.0;
 }
