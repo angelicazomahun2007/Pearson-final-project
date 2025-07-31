@@ -206,7 +206,40 @@ font-size: 1.5rem;
   color: white;
 }
 
+/* @media screen and (min-width: 1025px) {
+    #what .what-div1{
+   flex-direction: column-reverse;
+    max-width: 90%;
+    text-align: center;
+    }
+    .what-div1 img {
+       width: 80%;
+    height: auto;
+    margin-top: 20px;
+    }
+    .what-div2{
+  max-width: 80%;
 
+    }
+      .what-div3 {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    
+
+  }
+  .what-div3 .addict-statistic img{
+  width: 100%;
+}
+  .stat-text {
+    max-width: 90%;
+    text-align: left;
+  }
+  .what-div4 {
+    max-width:  90%;
+  }
+       
+} */
 @media screen and (max-width: 1024px) {
   #what .what-div1 {
     flex-direction: column-reverse;
@@ -381,6 +414,9 @@ margin-bottom: 30px;
   max-width: 80%;
 
 }
+.types-div3 h3{
+  font-size: 2.5rem;
+}
 .types-div3 p{
   font-size:  1.5rem;
   line-height: 1.3;
@@ -411,6 +447,7 @@ margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   margin-top: 80px;
 }
@@ -421,8 +458,218 @@ margin-bottom: 30px;
   flex-direction: column;
   font-size: 1.5rem;
 }
+.types-div4 h3{
+  font-size: 2.5rem;
+
+}
 .types-div4 div ul{
   list-style-type: square;
   font-weight: 500;
   line-height: 2.0;
+}
+@media screen and (max-width:1000px) {
+  #types h2{
+    font-size: 2.5rem;
+   }
+     .types-div1{
+    flex-direction: column-reverse;
+    max-width: 100%;
+    gap: 30px;
+
+   }
+    .types-div1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+   }
+     .types-div2{
+flex-direction: column-reverse;
+max-width: 100%;
+
+   }
+     .type-text2{
+  max-width: 90%;
+
+   }
+    .types-div2 img{
+    width: 50%;
+   }
+      .type-text1-sub{
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }  .types-div4 h3{
+font-size: 1.5rem;
+    width: 80%;
+
+  }
+    .types-div4{
+    width: 80%;
+  }
+    .types-div4 div{
+    width: 80%;
+    font-size: 1.2rem;
+   
+  }
+}
+@media screen and (max-width:768px) {
+  #types{
+
+  }
+   #types h2{
+    font-size: 2rem;
+   }
+   .types-div1{
+    flex-direction: column-reverse;
+    max-width: 100%;
+    gap: 30px;
+
+   }
+   .types-div1 img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+   }
+   .types-div1 p{
+    font-size: 1rem;
+    max-width: 90%;
+   }
+   .types-div1 ul{
+    font-size: 1rem;
+   }
+   .types-div2{
+flex-direction: column-reverse;
+max-width: 100%;
+
+   }
+   .type-text2{
+  max-width: 90%;
+
+   }
+   .type-text2 h3{
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+
+   }
+   .type-text2  h4{
+    font-size: 1.5rem;
+    margin-top: 30px;
+   }
+   .type-text2 p{
+    font-size:1rem ;
+   }
+   .types-div2 img{
+    width: 90%;
+   }
+   .types-div3{
+    max-width: 100%;
+   }
+      .types-div3 h3{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+   .types-div3 p{
+    font-size: 1rem;
+   }
+   .type-text1-sub{
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }
+  .type-text1-sub1{
+    max-width: 100%;
+    text-align: left;
+  }
+  .type-text1-sub1 li{
+    font-size: 1.2rem;
+  }
+  .types-div4{
+    width: 90%;
+  }
+  .types-div4 div{
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .types-div4 h3{
+font-size: 1.5rem;
+  }
+
+  .types-div5{
+    flex-direction: column-reverse;
+  }
+  .types-div5 img{
+   width: 100%;
+  }
+}
+
+
+.types-div5{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 80%;
+
+}
+.type-text3{
+  width: 50%;
+
+}
+.type-text3 h3{
+  font-size: 2.5rem;
+  text-align: left;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  border-bottom: #032B44 5px solid;
+}
+.type-text3 p{
+  font-size: 1.5rem;
+}
+.type-text3 h4{
+  font-size: 2rem;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.type-text3 ul{
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+}
+.types-div5 img{
+  width: 50%;
+}
+
+
+.types-div6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 90%;
+  margin-top: 100px;
+
+}
+.types-div6 div{
+  display: flex;
+  max-width: 80%;
+  gap: 30px;
+}
+
+.types-div6 h3{
+  font-size: 2.5rem;
+  /* border-bottom: #032B44 5px solid; */
+  width: 80%;
+  text-align: center;
+
+}
+.types-div6 p{
+  font-size: 1.5rem;
+}
+.types-div6 ul {
+  list-style: square;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 20px;
 }
