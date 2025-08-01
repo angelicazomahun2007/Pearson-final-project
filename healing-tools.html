@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="healing-tools.css">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+<header class="head">
+        <div class="logo">Brand <span> NAME</span></div>
+        <div class="ham" id="ham">
+<i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-link" id="nav-link">
+            <li><a href="#">Home</a></li>
+            <li class="drop">
+                <a href="#">Learn</a>
+                    <ul class="drop-menu">
+                        <li><a href="">What is Addiction</a></li>
+                        <li><a href="">Types of Addiction</a></li>
+                        <li><a href="">Signs of Addiction</a></li>
+                        <li><a href="">Causes and Prevention of Addiction</a></li>
+                        <li><a href="">Myth and Facts</a></li>
+                    </ul>
+            </li>
+            <li class="drop">
+                <a href="#">Resource</a>
+                    <ul class="drop-menu">
+                        <li><a href="">Stories of Hope</a></li>
+                        <li><a href="">Healing tools</a></li>
+                        <li><a href="">Supporting a Friend</a></li>
+                        <li><a href="">Confession wall</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">Media</a></li>
+        </nav>
+        <button class="head-btn"><a href="">Contact</a></button>
+    </header>
+
+
+
+ <div class="container">
+            <h1>Digital Healing Tools for Recovery</h1>
+            <p class="subtitle">Explore technology-assisted tools to help manage cravings and support your journey to sobriety</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="intro">
+            <h2>Discover Digital Solutions for Addiction Recovery</h2>
+            <p>These evidence-based digital tools can help you track progress, manage cravings, and build healthy habits. Try different tools to find what works best for your recovery journey.</p>
+        </section>
+        
+        <section class="tools-grid">
+            <!-- Tool 1: Sobriety Tracker -->
+            <div class="tool-card">
+                <div class="tool-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Sobriety Counter</h3>
+                    <p class="tool-description">Track your clean time with this interactive sobriety counter that celebrates your milestones and progress.</p>
+                    <ul class="tool-features">
+                        <li>Daily progress tracking</li>
+                        <li>Milestone celebrations</li>
+                        <li>Money and time saved calculator</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn" onclick="openModal('sobriety-modal')">Try It</button>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tool 2: Craving Management -->
+            <div class="tool-card">
+                <div class="tool-image" style="background-image: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Craving Management</h3>
+                    <p class="tool-description">Interactive tools to help you ride out cravings with cognitive behavioral techniques.</p>
+                    <ul class="tool-features">
+                        <li>Urge surfing exercises</li>
+                        <li>Distraction techniques</li>
+                        <li>Craving journal</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn" onclick="openModal('craving-modal')">Try It</button>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tool 3: Recovery Meditation -->
+            <div class="tool-card">
+                <div class="tool-image" style="background-image: url('https://images.unsplash.com/photo-1571741140674-8949ca7df2a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Guided Meditation</h3>
+                    <p class="tool-description">Audio meditations specifically designed for addiction recovery and emotional regulation.</p>
+                    <ul class="tool-features">
+                        <li>Cravings reduction</li>
+                        <li>Sleep improvement</li>
+                        <li>Emotional healing</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn" onclick="openModal('meditation-modal')">Try It</button>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tool 4: Recovery Community -->
+            <div class="tool-card">
+                <div class="tool-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Virtual Support</h3>
+                    <p class="tool-description">Connect with others in recovery through our moderated online community.</p>
+                    <ul class="tool-features">
+                        <li>24/7 peer support</li>
+                        <li>Anonymous participation</li>
+                        <li>Expert-led discussions</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn" onclick="openModal('community-modal')">Try It</button>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tool 5: Mood Tracker -->
+            <div class="tool-card">
+                <div class="tool-image" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Mood & Trigger Tracker</h3>
+                    <p class="tool-description">Identify patterns in your mood and triggers to better prevent relapse.</p>
+                    <ul class="tool-features">
+                        <li>Daily mood logging</li>
+                        <li>Trigger identification</li>
+                        <li>Personalized insights</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn" onclick="openModal('mood-modal')">Try It</button>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="progress-section">
+            <h2>Your Recovery Progress</h2>
+            <p>Track your engagement with these healing tools to see what's working best for you.</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="recovery-progress"></div>
+                </div>
+                <div class="progress-labels">
+                    <span>Just Starting</span>
+                    <span>Making Progress</span>
+                    <span>Strong in Recovery</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <button class="btn" onclick="updateProgress()">I Used a Tool Today</button>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Sobriety Counter Modal -->
+    <div class="tool-modal" id="sobriety-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Sobriety Counter</h3>
+            <div style="text-align: center; margin: 2rem 0;">
+                <div style="font-size: 3rem; font-weight: bold; color: var(--primary);" id="sobriety-days">0</div>
+                <div style="font-size: 1.2rem;">Days Sober</div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="background: #f0f8ff; padding: 1rem; border-radius: 4px;">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: var(--success);" id="money-saved">$0</div>
+                    <div>Money Saved</div>
+                </div>
+                <div style="background: #f0f8ff; padding: 1rem; border-radius: 4px;">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: var(--success);" id="time-saved">0 hrs</div>
+                    <div>Time Reclaimed</div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 1.5rem;">
+                <button class="btn" onclick="setSobrietyDate()">Set My Sobriety Date</button>
+                <input type="date" id="sobriety-date" style="margin-left: 1rem; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Craving Management Modal -->
+    <div class="tool-modal" id="craving-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Craving Management Tool</h3>
+            <p>When a craving hits, try this urge surfing technique:</p>
+            
+            <div style="margin: 1.5rem 0;">
+                <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <div style="width: 40px; height: 40px; background-color: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">1</div>
+                    <div>Notice the craving without judgment</div>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <div style="width: 40px; height: 40px; background-color: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">2</div>
+                    <div>Breathe deeply for 60 seconds</div>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <div style="width: 40px; height: 40px; background-color: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">3</div>
+                    <div>Rate craving intensity (1-10)</div>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 40px; height: 40px; background-color: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">4</div>
+                    <div>Wait 15 minutes - cravings typically pass</div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <h4>Current Craving Intensity</h4>
+                <input type="range" min="1" max="10" value="5" class="slider" id="craving-intensity" style="width: 100%; margin: 1rem 0;">
+                <div style="display: flex; justify-content: space-between;">
+                    <span>Mild (1)</span>
+                    <span>Severe (10)</span>
+                </div>
+                
+                <button class="btn" style="margin-top: 1.5rem;" onclick="logCraving()">Log This Craving</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Meditation Modal -->
+    <div class="tool-modal" id="meditation-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Guided Meditation</h3>
+            <p>Select a meditation to help with your current need:</p>
+            
+            <div style="margin: 1.5rem 0;">
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <button class="btn btn-outline" style="text-align: left;" onclick="playMeditation('cravings')">🔄 Cravings Reduction (5 min)</button>
+                    <button class="btn btn-outline" style="text-align: left;" onclick="playMeditation('anxiety')">🌊 Anxiety Relief (10 min)</button>
+                    <button class="btn btn-outline" style="text-align: left;" onclick="playMeditation('sleep')">🌙 Sleep Improvement (15 min)</button>
+                    <button class="btn btn-outline" style="text-align: left;" onclick="playMeditation('self-compassion')">💝 Self-Compassion (8 min)</button>
+                </div>
+            </div>
+            
+            <div id="meditation-player" style="display: none; margin-top: 1.5rem; text-align: center;">
+                <div style="font-size: 1.2rem; margin-bottom: 1rem;" id="meditation-title"></div>
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🎧</div>
+                <div style="display: flex; justify-content: center; gap: 1rem;">
+                    <button class="btn" onclick="pauseMeditation()">⏸️ Pause</button>
+                    <button class="btn" onclick="stopMeditation()">⏹️ Stop</button>
+                </div>
+                <div style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Find a comfortable position and focus on your breathing</div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>BreakAddict</h3>
+      <p>A safe and supportive platform for healing, hope, and transformation. We're here to help you rebuild your life.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: support@yourdomain.com</p>
+      <p>Helpline: +233 123 456 789</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Recovery Space. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+    <script>
+        const hambuger = document.getElementById("ham");
+        const navLink = document.getElementById("nav-link");
+         
+        hambuger.addEventListener('click', () => {
+            navLink.classList.toggle("active");
+        });
+
+    </script>
+
+
+
+
+ <script>
+        // Global variables
+        let progress = 0;
+        let sobrietyDate = null;
+        
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('modal-active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            document.querySelectorAll('.tool-modal').forEach(modal => {
+                modal.classList.remove('modal-active');
+            });
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside content
+        document.querySelectorAll('.tool-modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+        });
+        
+        // Progress tracker
+        function updateProgress() {
+            progress = Math.min(progress + 10, 100);
+            document.getElementById('recovery-progress').style.width = progress + '%';
+            
+            // Show encouragement based on progress
+            if (progress >= 70) {
+                alert("Great job! You're making consistent progress in your recovery.");
+            } else if (progress >= 30) {
+                alert("Nice work! Every tool you try strengthens your recovery.");
+            }
+        }
+        
+        // Sobriety counter functions
+        function setSobrietyDate() {
+            const dateInput = document.getElementById('sobriety-date');
+            if (dateInput.value) {
+                sobrietyDate = new Date(dateInput.value);
+                updateSobrietyCounter();
+                alert("Sobriety date set! Your progress will now be tracked.");
+            } else {
+                alert("Please select a date first.");
+            }
+        }
+        
+        function updateSobrietyCounter() {
+            if (sobrietyDate) {
+                const today = new Date();
+                const diffTime = Math.abs(today - sobrietyDate);
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                
+                document.getElementById('sobriety-days').textContent = diffDays;
+                
+                // Calculate money saved (example: $10/day)
+                const moneySaved = diffDays * 10;
+                document.getElementById('money-saved').textContent = '$' + moneySaved;
+                
+                // Calculate time saved (example: 2 hours/day)
+                const timeSaved = diffDays * 2;
+                document.getElementById('time-saved').textContent = timeSaved + ' hrs';
+            }
+        }
+        
+        // Craving management functions
+        function logCraving() {
+            const intensity = document.getElementById('craving-intensity').value;
+            alert(`Craving logged at intensity ${intensity}/10. Remember, cravings are temporary and will pass.`);
+            closeModal();
+        }
+        
+        // Meditation functions
+        function playMeditation(type) {
+            const player = document.getElementById('meditation-player');
+            const title = document.getElementById('meditation-title');
+            
+            player.style.display = 'block';
+            
+            switch(type) {
+                case 'cravings':
+                    title.textContent = "Cravings Reduction Meditation";
+                    break;
+                case 'anxiety':
+                    title.textContent = "Anxiety Relief Meditation";
+                    break;
+                case 'sleep':
+                    title.textContent = "Sleep Improvement Meditation";
+                    break;
+                case 'self-compassion':
+                    title.textContent = "Self-Compassion Meditation";
+                    break;
+            }
+        }
+        
+        function pauseMeditation() {
+            alert("Meditation paused. You can resume when ready.");
+        }
+        
+        function stopMeditation() {
+            document.getElementById('meditation-player').style.display = 'none';
+            alert("Great job completing your meditation! How do you feel now?");
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default sobriety date to 7 days ago for demo
+            const defaultDate = new Date();
+            defaultDate.setDate(defaultDate.getDate() - 7);
+            document.getElementById('sobriety-date').valueAsDate = defaultDate;
+            
+            // Close modals when pressing Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
