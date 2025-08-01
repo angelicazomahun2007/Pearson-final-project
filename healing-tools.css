@@ -1,11 +1,11 @@
-  :root {
+  /* :root {
             --primary: #4a6fa5;
             --secondary: #166088;
             --accent: #4fc3f7;
             --light: #f8f9fa;
             --dark: #343a40;
             --success: #28a745;
-        }
+        } */
         
         * {
             margin: 0;
@@ -20,16 +20,227 @@
             line-height: 1.6;
         }
         
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a, button, .card, .story-panel, .healing-tool, .media-box, .footer-about, .footer-links, .footer-contact,.tool-card,.home-div3 {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+a:hover, button:hover,
+.card:hover, .story-panel:hover,
+.healing-tool:hover, .media-box:hover,
+.footer-about:hover, .footer-links:hover, .footer-contact:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.head{
+    background-color: #032B44;
+    display: flex;
+    padding: 30px 100px;
+    justify-content: space-between;
+    position: sticky;
+    /* position: fixed;
+    width:100%; */
+    top: 0px;
+    z-index: 100;
+}
+.logo{
+    color: white;
+    font-size: 1.5rem;
+}
+.logo span{
+    color: #ADD8E6;
+}
+.ham i{
+    display: none;
+    font-size: 1.0rem;
+}
+.nav-link{
+    display: flex;
+   justify-content: center;
+   gap: 30px;
+   position: relative;
+   align-items: center;
+   color: white;
+  
+   margin: 0 auto;
+
+}
+.nav-link li{
+    list-style: none;
+    color: white;
+  
+}
+.nav-link li a{
+  text-decoration: none;
+  transition: all 1s;
+    color: white;
+    font-size: 1rem;
+
+}
+.nav-link li a:hover{
+    color: #ADD8E6;
+    
+
+}
+.drop{
+    position: relative;
+}
+.drop-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ADD8E6;
+    display: none;
+    flex-direction: column;
+    min-height: 150px;
+    z-index: 100;
+    transition: all 2.0s;
+    padding: 10px 10px;
+    border-bottom: 2px solid black;
+    gap: 10px;
+    width: 180px;
+
+}
+.drop-menu li a{
+     border-bottom: 1px solid black;
+     color:#032B44;
+
+}
+.drop-menu li a:hover{
+
+    color: #032B44;
+}
+.drop:hover .drop-menu{
+    display: flex;
+
+}
+.head-btn{
+    background-color: white;
+    color: #032B44;
+    color: #032B44;
+    padding: 10px 30px;
+    /* border: 1px solid white; */
+}
+.head-btn a{
+text-decoration: none;
+font-size: 1rem;
+font-weight: 600;
+    color: #032B44;
+
+
+}
+@media screen and (max-width:768px){
+    .head{
+        padding: 20px 50px;
+        /* position: fixed; */
+    }    .logo{
+        font-size: 1.2rem;
+    }
+    .ham i{
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .ham i:hover .nav-link{
+        display: flex;
+        z-index: 100;
+
+    }
+    .nav-link{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #032B44;
+        z-index: 100;
+    }
+    .nav-link li{
+        margin: 10px 0;
+    }
+    .nav-link.active{
+        display: flex;
+        z-index: 100;
+
+    }
+    .drop-menu{
+      z-index: 120;
+    }
+    
+    
+    .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+  }
+
+  .cards button {
+    width: 90%;
+  }
+
+  .home-herobtn {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width:380px){
+     .head{
+        padding: 20px 50px;
+        gap: 20px;
+        width:100% ;
+    }
+    .head-btn{
+        padding: 0px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+        .container {
+            max-width: 70%;
+            margin: 0 auto;
+            padding: 0 20px;
+            
+        }
+        
+      /* :root {
+            --primary: #5d5fef;
+            --secondary: #4b6cb7;
+            --accent: #6a11cb;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #28a745;
+            --warning: #ffc107;
+        }
+         */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f1f5f9;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background:#032B44;
             color: white;
             padding: 2rem 0;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 70%;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -40,19 +251,10 @@
         }
         
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.9;
             max-width: 800px;
             margin: 0 auto;
-        }
-        
-        .intro {
-            text-align: center;
-            padding: 3rem 0;
-            background-color: white;
-            margin: 2rem 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         
         .tools-grid {
@@ -64,21 +266,26 @@
         
         .tool-card {
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
         
         .tool-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         }
         
-        .tool-image {
-            height: 180px;
-            background-size: cover;
-            background-position: center;
+        .tool-icon {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background:#ADD8E6;
+            color:#032B44;
         }
         
         .tool-content {
@@ -86,94 +293,17 @@
         }
         
         .tool-title {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 0.5rem;
-            color: var(--secondary);
+            color: var(--dark);
         }
         
         .tool-description {
-            margin-bottom: 1rem;
             color: #555;
+            font-size: 0.95rem;
         }
         
-        .tool-features {
-            margin: 1rem 0;
-            padding-left: 1.2rem;
-        }
-        
-        .tool-features li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 0.6rem 1.2rem;
-            background-color: var(--accent);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .btn:hover {
-            background-color: var(--secondary);
-        }
-        
-        .btn-outline {
-            background: transparent;
-            border: 1px solid var(--accent);
-            color: var(--accent);
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--accent);
-            color: white;
-        }
-        
-        .tool-actions {
-            display: flex;
-            gap: 0.8rem;
-            margin-top: 1rem;
-        }
-        
-        .progress-section {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 3rem 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        
-        .progress-container {
-            margin-top: 1.5rem;
-        }
-        
-        .progress-bar {
-            height: 10px;
-            background-color: #e9ecef;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        
-        .progress {
-            height: 100%;
-            background-color: var(--success);
-            width: 0%;
-            transition: width 0.5s ease;
-        }
-        
-        .progress-labels {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            color: #666;
-        }
-        
-        .tool-modal {
+        .modal {
             position: fixed;
             top: 0;
             left: 0;
@@ -189,15 +319,26 @@
             transition: all 0.3s ease;
         }
         
+        .modal-active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
         .modal-content {
             background-color: white;
             width: 90%;
-            max-width: 600px;
-            border-radius: 8px;
+            max-width: 500px;
+            border-radius: 10px;
             padding: 2rem;
             position: relative;
             transform: translateY(-20px);
             transition: all 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .modal-active .modal-content {
+            transform: translateY(0);
         }
         
         .modal-close {
@@ -211,21 +352,116 @@
             color: #666;
         }
         
-        .modal-active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .modal-active .modal-content {
-            transform: translateY(0);
-        }
-        
-        footer {
-            background-color: var(--dark);
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background-color:#032B44;
             color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        
+        .btn:hover {
+            background-color:#ADD8E6;
+            transform: translateY(-2px);
+            color: #032B44;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border:#032B44 1px solid;
+            color:#032B44;
+        }
+        
+        .btn-outline:hover {
+            background-color:#ADD8E6;
+            color: white;
+        }
+        
+        /* Breathing Tool Styles */
+        .breathing-container {
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .breathing-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background:#032B44;
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: all 1s ease;
+        }
+        
+        .breathing-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        /* Craving Journal Styles */
+        .journal-entry {
+            margin-bottom: 1.5rem;
+        }
+        
+        .journal-input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            font-family: inherit;
+        }
+        
+        .journal-entries {
+            margin-top: 1.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+        
+        .journal-entry-item {
+            background-color: #f8f9fa;
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Progress Tracker */
+        .progress-container {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background:#032B44;
+            width: 0%;
+            transition: width 0.5s ease;
         }
         
         @media (max-width: 768px) {
@@ -236,4 +472,75 @@
             h1 {
                 font-size: 2rem;
             }
+            
+            .breathing-circle {
+                width: 150px;
+                height: 150px;
+            }
         }
+
+
+
+
+
+        
+.main-footer {
+  background-color: #032B44;
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-container h3,
+.footer-container h4 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ADD8E6;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ffffff30;
+  padding-top: 20px;
+  margin-top: 30px;
+  color: #ccc;
+}
+
