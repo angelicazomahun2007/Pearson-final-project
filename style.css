@@ -28,9 +28,16 @@ a:hover, button:hover,
 .logo{
     color: white;
     font-size: 1.5rem;
+    text-decoration: none;
+}
+.logo >a{
+    text-decoration: none;
+    color: white;
+
 }
 .logo span{
     color: #ADD8E6;
+    /* font-size: 2rem; */
 }
 .ham i{
     display: none;
